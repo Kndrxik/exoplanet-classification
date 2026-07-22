@@ -1,0 +1,17 @@
+# Środowisko wirtualne
+.venv/
+
+# Pliki tymczasowe Pythona
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ustawienia lokalne
+.vscode/
+.env
+
+# Wygenerowane dane i modele
+data/raw/
+models/
