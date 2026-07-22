@@ -1,17 +1,14 @@
-# Środowisko wirtualne
+# Kernel
 .venv/
 
-# Pliki tymczasowe Pythona
+# Python files
 __pycache__/
 *.py[cod]
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Ustawienia lokalne
+# Local settings
 .vscode/
 .env
 
-# Wygenerowane dane i modele
-data/raw/
-models/
