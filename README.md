@@ -57,8 +57,7 @@ in this extract).
   FALSE POSITIVE (5.3% missing rate vs. 0.07% for CONFIRMED) — likely signals rejected early enough
   in Kepler's own pipeline that downstream parameters were never computed. Dropped for this project;
   worth revisiting as an engineered `is_missing` flag.
-- **Skewed distributions**: 7 of 8 numeric features are strongly right-skewed (`koi_prad` skewness
-  ≈ 54); `log1p` transform applied before scaling for the linear model.
+- **Skewed distributions**: 7 of 8 numeric features are strongly right-skewed; `log1p` transform applied before scaling for the linear model.
 - **Extreme values are signal, not noise**: some `koi_prad` values exceed 20,000 Earth radii —
   physically impossible for a real planet, and these rows are exclusively FALSE POSITIVE. Most
   likely eclipsing binaries misidentified as transits. Not capped/removed, since they separate the
